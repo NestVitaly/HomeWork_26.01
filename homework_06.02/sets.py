@@ -32,4 +32,4 @@ first_set = set(first_list)
 second_set = set(second_list)
 result = sorted((first_set).intersection(second_set))
 
-print(f'Схожие значения: {str(result).strip("[]")}')
+print(f'Схожие значения: {str(result).strip("[]")}') 
