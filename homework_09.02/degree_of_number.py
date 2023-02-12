@@ -5,9 +5,9 @@
 # A = 2; B = 3 -> 8
 
 def degreeNum(first_num, second_num):
-    if second_num == 0: # делаем базис на ввод нуля
+    if second_num == 0: # базис на ноль
         return 1
-    if second_num == 1: # базис на ввод единицы
+    if second_num == 1: # базис на единицу
         return first_num
     return first_num * degreeNum(first_num, second_num - 1)
 
