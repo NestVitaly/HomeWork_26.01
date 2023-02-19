@@ -13,18 +13,11 @@
 # 5        10        15         20        25         30
 # 6        12        18         24        30         36
 #
-# def print_operation_table(operation, num_rows=6, num_columns=6):
-#     for i in range(1, num_rows + 1):
-#         for j in range(1, num_columns + 1):
-#             table = operation(i, j)
-#             print(table, end=' ' * 5)
-#         print()
-#
-# print_operation_table(lambda x, y: x * y)
+def print_operation_table(operation, num_rows=6, num_columns=6):
+     for i in range(1, num_rows + 1):
+         for j in range(1, num_columns + 1):
+             table = operation(i, j)
+             print(table, end=' ' * 5)
+         print()
 
-def count_sheep(n):
-    if n == 0:
-        return 'm'
-    elif n >= 1:
-        return print(i + 'sheep...' for i in range(n))
-n = int(input('num '))
+print_operation_table(lambda x, y: x * y)
